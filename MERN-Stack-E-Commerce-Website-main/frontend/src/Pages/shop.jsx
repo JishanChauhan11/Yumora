@@ -1,24 +1,20 @@
 import React from 'react'
-import  Hero  from '../Components/Hero/Hero'
+import Hero from '../Components/Hero/Hero'
+import TechSection from '../Components/TechSection/TechSection'
 import Popular from '../Components/Popular/Popular'
-import Offers from '../Components/Offers/Offers'
 import NewCollections from '../Components/NewCollections/NewCollections'
 import NewsLetter from '../Components/NewsLetter/NewsLetter'
 
-
-export const shop = () => {
+const Shop = () => {
   return (
     <div>
-        <Hero />
-        <Popular/>
-        <Offers/>
-        <NewCollections/>
-        <NewsLetter/>
+      <Hero/>
+      <TechSection/> {/* Added the new section here */}
+      <Popular/>
+      <NewCollections/>
+      <NewsLetter/>
     </div>
   )
 }
 
-export default shop;
-
-
-
+export default Shop
